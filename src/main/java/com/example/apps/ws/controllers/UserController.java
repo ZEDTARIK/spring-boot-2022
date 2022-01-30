@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.apps.ws.requests.UserRequest;
+import com.example.apps.ws.responses.UserResponse;
 
 @RestController
 @RequestMapping("/users")
@@ -23,8 +24,8 @@ public class UserController {
 	 *  Deserializable
 	 */
 	@PostMapping
-	public String createUser(@RequestBody UserRequest userRequest) {
-		return "create user";
+	public UserResponse createUser(@RequestBody UserRequest userRequest) {
+		return null;
 	}
 
 	@PutMapping
